@@ -80,6 +80,37 @@ h2 {
   margin: 0.3rem 0 0;
 }
 
+.lista-promociones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promo {
+  background-color: var(--blanco-hueso);
+  border: 1px solid var(--marron-medio);
+  border-left: 5px solid var(--marron-oscuro);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.promo-titulo {
+  margin: 0 0 0.3rem;
+  color: var(--marron-oscuro);
+}
+
+.promo-descripcion {
+  margin: 0 0 0.3rem;
+}
+
+.promo-condiciones {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--marron-medio);
+}
+
 .tabla-horarios {
   width: 100%;
   border-collapse: collapse;
