@@ -20,22 +20,26 @@ body {
 }
 
 header {
-  background-color: var(--marron-oscuro);
+  background: linear-gradient(135deg, var(--marron-oscuro), var(--marron-medio));
   color: var(--blanco-hueso);
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(59, 42, 32, 0.35);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: 0.05em;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .eslogan {
   margin: 0.5rem 0 0;
   font-style: italic;
   color: var(--crema);
+  opacity: 0.85;
 }
 
 main {
@@ -59,14 +63,24 @@ h2 {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
 }
 
 .lista-productos li {
   background-color: var(--blanco-hueso);
   border: 1px solid var(--marron-medio);
-  border-radius: 6px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 0;
+  box-shadow: 0 2px 6px rgba(59, 42, 32, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lista-productos li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(59, 42, 32, 0.25);
 }
 
 .lista-productos h3 {
@@ -76,7 +90,7 @@ h2 {
 
 .precio {
   font-weight: bold;
-  color: var(--marron-medio);
+  color: var(--marron-oscuro);
   margin: 0.3rem 0 0;
 }
 
